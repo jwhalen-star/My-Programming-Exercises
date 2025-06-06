@@ -1,4 +1,4 @@
 # beginner-pseudocode-projects
-Please see attached within this repository beginner-level pseudocode projects where I explore fundamental Object-Oriented Programming (OOP) concepts and common algorithms. Each project is designed to help me deepen my understanding of programming principles through clear, structured pseudocode.
+Please find within this repository pseudocode projects where I explore fundamental Object-Oriented Programming concepts. Each implementation is designed to showcase a deep and fulfilled understanding of strategies being applied. 
 
 
