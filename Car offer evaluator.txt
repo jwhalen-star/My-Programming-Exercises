@@ -4,6 +4,7 @@ The dealer's cost of a car is 85% of the listed price. The dealer would accept a
 # Description
 Using Object Oriented Programming principals. Set methods which assign user input to particular variables. Get methods for access to data outside of class. The would_accept_offer method demonstrates abstraction by encapsulating the offer evaluation logic. Conditional logic within a class. Creates a class and an object. 
 
+# Pseudocode
 
 start
 
