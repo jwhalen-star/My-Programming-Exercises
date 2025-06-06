@@ -1,2 +1,2 @@
 # pseudocode-projects
-Beginner pseudocode
+Beginner pseudocode projects
