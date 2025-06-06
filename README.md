@@ -1,0 +1,2 @@
+# pseudocode-projects
+Beginner pseudocode
