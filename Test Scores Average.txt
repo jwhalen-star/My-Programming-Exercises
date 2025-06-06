@@ -2,7 +2,7 @@
 Design an algorithm to find the weighted average of four test scores.
 
 # Description
-Using Object Oriented Programming principals. Set methods. Declares a class, and creates an object. 
+Using Object Oriented Programming principals. Set methods. Declares a class, and creates an object. Class implementation enclosed in brackets because classes are defined within a code block.
 
 #Pseudocode
 
