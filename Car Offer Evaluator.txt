@@ -2,7 +2,7 @@
 The dealer's cost of a car is 85% of the listed price. The dealer would accept any offer that is at least $500 over the dealer's cost. Design an algorithm that prompts the user to input the list price of the car and print the least amount that the dealer would accept for the car.
 
 # Description
-Using Object Oriented Programming principals. Set methods which assign user input to particular variables. Get methods for access to data outside of class. Abstraction by encapsulating offer evaluation logic. Creates a class and an object. 
+Using Object Oriented Programming principals. Set methods which assign user input to particular variables. Get methods for access to data outside of class. Abstraction by encapsulating offer evaluation logic in a method within the class. Creates a class and an object. 
 
 # Pseudocode
 
