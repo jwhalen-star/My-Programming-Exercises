@@ -4,7 +4,7 @@ Design an algorithm that prompts the user to input the list price of the car and
 
 # Description
 Using Object Oriented Programming principals. Set methods which assign user input to particular variables. Get methods for access to data outside of class. 
-Abstraction by encapsulating offer evaluation logic in a method within the class. Creates a class and an object. 
+Abstraction and encapsulation. Creates a class and an object. 
 
 # Pseudocode
 
