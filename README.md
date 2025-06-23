@@ -1,4 +1,4 @@
-# my-projects
+# My-Projects
 
 Welcome to my coding/pseudocode projects repository.
 Please find within this repository structured pseudocode representations of programming solutions, flowcharts, and of course, actual code. 
