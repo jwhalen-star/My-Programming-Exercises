@@ -6,7 +6,7 @@ I explore fundamental coding concepts including but not limited to control flow 
 Each implementation is designed to showcase a deep and fulfilled understanding of the strategies being applied. 
 All coding is my own original work, and every problem is inspired by classic programming challenges uniquely presented within this repository. 
 
-## Topics Covered
+# Topics Covered
 
 - Control Structures (if, loops)
 - Functions and Recursion
