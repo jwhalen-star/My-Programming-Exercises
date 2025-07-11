@@ -2,11 +2,9 @@
 Design an algorithm to find the weighted average of four test scores.
 
 # Description
-Using object oriented orogramming principals. Set methods. Declares a class, and creates an object. Class implementation enclosed in brackets 
-because classes are defined within a code block.
+Using object oriented programming principals. Set methods and get methods. Declares a class, and creates an object. Please note class defined within a block. 
 
 #Pseudocode
-
 start
 
 Class test_scores_average_algorithm {
