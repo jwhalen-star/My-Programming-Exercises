@@ -24,13 +24,12 @@ Class test_scores_average_algorithm {
       test_score_4 = ts4
       return 
 
-   private int calc_average()
+   private void calc_average()
       average_of_test_scores = (test_score_1 + test_score_2 + test_score_3 + test_score_4) / 4
-      return average_of_test_scores
 
    public void print_average()
-      average = calc_average()
-      output average
+      calc_average ()                        //calc_average() called every time program prints to ensure always prints correct value
+      output average_of_test_scores
 }
 int main() {
    Declarations
