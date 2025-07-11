@@ -1,21 +1,23 @@
 # Prompt
+
 Design an algorithm to find the weighted average of four test scores.
 
 # Description
-Using object oriented programming principals. Set methods and get methods. Declares a class, and creates an object. Please note class defined within a block. 
+
+Using object oriented programming principals. Set methods and get methods. Declares a class, and creates an object of that class. 
 
 #Pseudocode
-start
 
-Class test_scores_average_algorithm {
+start
+Class test_scores_average_algorithm {   
    Declarations
-      private int test_score_1
+      private int test_score_1            // All necessary varaibles declared as private - encapsulation
       private int test_score_2
       private int test_score_3
       private int test_score_4
       private int average_of_test_scores
 
-   public void set_test_scores(ts1, ts2, ts3, ts4)
+   public void set_test_scores(ts1, ts2, ts3, ts4)   // Set method declared as public to allow acess from outside class
       test_score_1 = ts1
       test_score_2 = ts2
       test_score_3 = ts3
@@ -30,8 +32,7 @@ Class test_scores_average_algorithm {
       average = calc_average()
       output average
 }
-
-int main()
+int main() {
    Declarations
       test_scores_average_algorithm average_1
       int score_1
@@ -49,5 +50,5 @@ int main()
    average_1.print_average()
 
    return 0
-
+}
 stop
