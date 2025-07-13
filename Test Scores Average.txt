@@ -9,9 +9,9 @@ Using object oriented programming principals. Set methods and get methods. Decla
 #Pseudocode
 
 start
-Class test_scores_average_algorithm {   
+Class test_scores_average_algorithm {   // No constructor defined - default constructor
    Declarations
-      private int test_score_1            // All necessary varaibles declared as private - encapsulation
+      private int test_score_1            // Instance varaibles declared as private - encapsulation
       private int test_score_2
       private int test_score_3
       private int test_score_4
@@ -28,7 +28,7 @@ Class test_scores_average_algorithm {
       average_of_test_scores = (test_score_1 + test_score_2 + test_score_3 + test_score_4) / 4
 
    public void print_average()
-      calc_average ()                        //calc_average() called every time program prints to ensure always prints correct value
+      calc_average ()                        //calc_average() called to ensure always prints correct value
       output average_of_test_scores
 }
 int main() {
