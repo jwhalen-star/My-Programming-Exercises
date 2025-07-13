@@ -4,14 +4,14 @@ Design an algorithm to find the weighted average of four test scores.
 
 # Description
 
-Using object oriented programming principals. Set methods and get methods. Declares a class, and creates an object of that class. 
+Using object oriented programming principals. Set methods to allow access to instance variables outside class. Declares a class, and creates an object of that class. 
 
 #Pseudocode
 
 start
-Class test_scores_average_algorithm {   // No constructor defined - default constructor
+Class test_scores_average_algorithm {   // No constructor defined - uses default constructor
    Declarations
-      private int test_score_1            // Instance varaibles declared as private - encapsulation
+      private int test_score_1            // Instance varaiales declared as private - encapsulation
       private int test_score_2
       private int test_score_3
       private int test_score_4
