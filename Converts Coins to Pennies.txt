@@ -11,7 +11,7 @@ equivalent number of pennies. Final print method calls intermediate calculation 
 
 start
 
-Class change_to_pennies {           // No constructor defined - default constructor
+Class change_to_pennies {           // No constructor defined - uses default constructor
    Declarations                     // Class variables (fields). Instance variables inaccessible outside of class. Encapsulation. All methods within the class can access fields directly. No need to explicitly return values
       int num_pennies_0
       int num_quarters
