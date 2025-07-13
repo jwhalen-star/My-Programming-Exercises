@@ -4,15 +4,15 @@ Design an algorithm to convert the change given in quarters, dimes, nickels, and
 
 # Description
 
-Using object oriented programming principals. Uses set methods which store values inside the class and get methods to make values accessible. Intermediate calculations methods which individually convert worth of each coin into 
-equivalent number of pennies. Final print method updating values each time method is called. Also creates a class and an object of the class. 
+Using object oriented programming principals. Uses set methods to store values in instance variables otherwise unable to be accessed from outside the class. Intermediate calculations methods which individually convert worth of each coin into 
+equivalent number of pennies. Final print method calls intermediate calculation methods to update values each time method is called to print most accurate figures. Creates a class and an object of the class. 
 
 # Pseudocode
 
 start
 
-Class change_to_pennies {
-   Declarations                     // Class variables (fields). All methods can access fields directly. No need to explicitly return values
+Class change_to_pennies {           // No constructor defined - default constructor
+   Declarations                     // Class variables (fields). Instance variables inaccessible outside of class. Encapsulation. All methods within the class can access fields directly. No need to explicitly return values
       int num_pennies_0
       int num_quarters
       int num_dimes
@@ -65,9 +65,10 @@ Class change_to_pennies {
       output "The number of pennies is " + number_of_pennies_total
       return
 }
+
 int main() {
    Declarations
-      change_to_pennies first_case
+      change_to_pennies first_case         // Declares variable to represent instance of the class. Relies on implicit default constructor
       int input_pennies
       int input_nickles
       int input_dimes
@@ -80,12 +81,14 @@ int main() {
    input input_dimes
    input input_quarters
 
-   first_case.set_pennies(input_pennies)
+   first_case.set_pennies(input_pennies)      // Set methods used to access instance variables
    first_case.set_quarters(input_quarters)
    first_case.set_dimes(input_dimes)
    first_case.set_nickles(input_nickles)
 
    first_case.print_result()
+
 return 0
 }
+
 stop
