@@ -3,20 +3,19 @@ The dealer's cost of a car is 85% of the listed price. The dealer would accept a
 Design an algorithm that prompts the user to input the list price of the car and print the least amount that the dealer would accept for the car.
 
 # Description
-Using Object Oriented Programming principals. Set methods which assign user input to particular variables. Get methods for access to data outside of class. 
-Abstraction and encapsulation. Creates a class and an object. 
+Using object oriented programming principals. Set methods which assign user input to particular variables. Get methods for access to data outside of class. Get methods do not accept parameters because their only job is to return a value. Creates a class and an object. 
 
 # Pseudocode
 
 start
 
-class CarOfferEvaluator {
+class CarOfferEvaluator {         // No constructor declared - uses default constructor
    
    Declarations
-      private int list_price
+      private int list_price         // Instance variables 
       private int user_offer
-      private const int OVER_LIST_ACCEPT = 500
-      private const double COST_MULT = .85
+      private static const int OVER_LIST_ACCEPT = 500      // Static constants. Each object doesn't need it's own copy
+      private static const double COST_MULT = .85
       
    public void set_list_price(int price)
       list_price = price
@@ -42,7 +41,8 @@ class CarOfferEvaluator {
          print "Dealer would reject offer."
 }
 
-int main ()
+int main () {
+
    Declarations
       CarOfferEvaluator evaluator
       int input_list_price
@@ -54,11 +54,11 @@ int main ()
    output "Please input offer: "
    input input_offer
 
-   evaluator.set_list_price(input_list_price)
+   evaluator.set_list_price(input_list_price)      // Instance methods which operate on a specific instance of a class
    evaluator.set_offer(input_offer)
 
    evaluator.print_result()
 
    return 0
-
+}
 stop
