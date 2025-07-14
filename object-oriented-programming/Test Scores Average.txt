@@ -1,0 +1,53 @@
+# Prompt
+
+Design an algorithm to find the weighted average of four test scores.
+
+# Description
+
+Using object oriented programming principals. Set methods to allow access to instance variables outside class. Declares a class, and creates an object of that class. 
+
+#Pseudocode
+
+start
+Class test_scores_average_algorithm {   // No constructor defined - uses default constructor
+   Declarations
+      private int test_score_1            // Instance varaiales declared as private - encapsulation
+      private int test_score_2
+      private int test_score_3
+      private int test_score_4
+      private int average_of_test_scores
+
+   public void set_test_scores(ts1, ts2, ts3, ts4)   // Set method declared as public to allow acess from outside class
+      test_score_1 = ts1
+      test_score_2 = ts2
+      test_score_3 = ts3
+      test_score_4 = ts4
+      return 
+
+   private void calc_average()
+      average_of_test_scores = (test_score_1 + test_score_2 + test_score_3 + test_score_4) / 4
+
+   public void print_average()
+      calc_average ()                        //calc_average() called to ensure always prints correct value
+      output average_of_test_scores
+}
+int main() {
+   Declarations
+      test_scores_average_algorithm average_1
+      int score_1
+      int score_2
+      int score_3
+      int score_4
+
+   output "Please enter 4 test scores to create an average:"
+   input score_1
+   input score_2
+   input score_3 
+   input score_4
+
+   average_1.set_test_scores(score_1, score_2, score_3, score_4)
+   average_1.print_average()
+
+   return 0
+}
+stop
