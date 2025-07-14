@@ -1,1 +1,1 @@
-Please find within this repo various flowcharts I've created to represent different programs and logics. 
+Please find within this folder various flowcharts I've created that represent different programs and logics. 
