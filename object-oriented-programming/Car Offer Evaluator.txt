@@ -3,7 +3,8 @@ The dealer's cost of a car is 85% of the listed price. The dealer would accept a
 Design an algorithm that prompts the user to input the list price of the car and print the least amount that the dealer would accept for the car.
 
 # Description
-Using object oriented programming principals. Set methods which assign user input to particular variables. Get methods for access to data outside of class. Get methods do not accept parameters because their only job is to return a value. Creates a class and an object. 
+Using object oriented programming principals. Set methods which assign user input to particular variables. Get methods for access to data outside of class. 
+Get methods do not accept parameters because their only job is to return a value. Creates a class and an object. 
 
 # Pseudocode
 
