@@ -4,7 +4,8 @@ Design an algorithm to convert the change given in quarters, dimes, nickels, and
 
 # Description
 
-Using object oriented programming principals. Uses set methods to store values in instance variables otherwise unable to be accessed from outside the class. Intermediate calculations methods which individually convert worth of each coin into 
+Using object oriented programming principals. Uses set methods to store values in instance variables otherwise unable to be accessed from outside the class. 
+Intermediate calculations methods which individually convert worth of each coin into 
 equivalent number of pennies. Final print method calls intermediate calculation methods to update values each time method is called to print most accurate figures. Creates a class and an object of the class. 
 
 # Pseudocode
