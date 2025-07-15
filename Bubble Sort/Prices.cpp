@@ -13,7 +13,7 @@ const int length_of_list = 5;
 
 int list_1[length_of_list] = {1200, 499, 2500, 799, 1500};
 
-void bubble_sort(int array[], int length_of_list);
+void bubble_sort(int array[], int length_of_list);            // Prototypes of functions
 void print_sorted_array(int array[], int length_of_list);
 
 int main () {
