@@ -1,5 +1,6 @@
 Welcome to my selection sort folder.
-A selection sort is a type of sorting algorithm that starts with the first element in a list as the current position, and swaps this element with the smallest or largest element in the list before moving on to the next element. 
-All elements to the left of the current element are considered sorted and ignored. The algorithm scans the remaining unsorted portion of the list to find the next element to place. This process continues until the entire list is sorted.
+A selection sort is a type of sorting algorithm that compares the current element in a list to the rest of the elements in a list, and swaps them if a smaller/larger value is found.
+As the list is sorted, the sorted portion on the left grows larger, while the portion left to be sorted on the right becomes smaller, until the entire list is sorted.
+While sorting, the portion of the list that is already sorted is ignored.
 Useful when memory is extremely limited, and when the list is small and performance isn't critical.
 
