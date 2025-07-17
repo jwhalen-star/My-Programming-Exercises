@@ -1,4 +1,4 @@
-# My Coding Projects
+# My Coding Projects Repository
 
 Welcome to the "My Coding Projects" repository. 
 Within this repository you will find structured pseudocode representations, flowcharts, and of course, actual code I have written in various programming languages to address various programming oriented exercises.
