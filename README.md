@@ -1,4 +1,4 @@
-# My-Coding-and-Pseudocode-Projects-Repo
+# My-Coding-and-Pseudocode-Repo
 
 Welcome to the "My Coding and Pseudocode Repo" repository. 
 Within this repository you will find structured pseudocode representations of programming solutions, flowcharts, and of course, actual code I have written in various programming languages in which I explore fundamental syntax and coding concepts. 
