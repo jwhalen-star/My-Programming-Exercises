@@ -1,8 +1,8 @@
 /* Prompt: Create a program that calculates your pet's age in any given year.
    
    Description: new_age_function handles output and loops until a valid year is entered.
-   No need for return statements within conditionals since the function ends after the loop exits.
-   Final return is implicit in void functions.
+   No need for return statements within the conditionals because the function ends after the loop exits.
+   Return is implicit in void functions.
    Loop is sentinel controlled in that loop runs until valid input is received. 
 */
 
