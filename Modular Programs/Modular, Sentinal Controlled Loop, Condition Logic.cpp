@@ -45,7 +45,7 @@ void new_age_function(int petCurrentAge, int currentYear, int inputYear) {
          break;
       } else {
          int pet_age = inputYear - (currentYear - petCurrentAge);       
-         cout << "Your pet will be " << pet_age << " years old!" << endl;
+         cout << "Your pet will be " << pet_age << " years old." << endl;
          break;
       }
     }
