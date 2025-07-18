@@ -22,39 +22,35 @@ int main()
    is_qualified(player_score_1, player_rank_1);
 
    return 0;
-
 }   
  
 void is_qualified(int playerScore, int playerRank) {
-   if(playerScore >= 95)
-   {
-      if(playerRank <= 20)
+   if(playerScore >= 95) {
+      if(playerRank <= 20) {
          cout << "Qualified" << endl;
-      else
-         cout << "Not Qualified" << endl; 
-   }
-   else 
-   {
-      if(playerScore >= 85)
-      {
-         if(playerRank <= 40)
-            cout << "Qualified" << endl;
-         else
-            cout << "Not Qualified" << endl;
+      } else {
+         cout << "Not Qualified" << endl;
       }
-      else
-      {
-         if(playerScore >= 75)
-         {
-            if(playerRank <= 60) 
-               cout << "Qualified" << endl;
-            else
-               cout << "Not Qualified" << endl;
-         }
-         else
+   } else {
+      if(playerScore >= 85) {
+         if(playerRank <= 40) {
+            cout << "Qualified" << endl;
+         } else {
             cout << "Not Qualified" << endl;
+         }
+      } else {
+         if(playerScore >= 75) {
+            if(playerRank <= 60) {
+               cout << "Qualified" << endl;
+            } else {
+               cout << "Not Qualified" << endl;
+            }
+         } else {
+            cout << "Not Qualified" << endl;
+         }
       }
    }
 }
+
 
 
