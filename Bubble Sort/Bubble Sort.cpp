@@ -7,6 +7,7 @@ Please note the modularity of the program. 'While' loop implementaton as opposed
 */
 
 #include <iostream>
+
 using namespace std;
 
 const int length_of_list = 5;
