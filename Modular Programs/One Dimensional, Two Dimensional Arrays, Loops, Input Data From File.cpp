@@ -129,5 +129,3 @@ void listTutorsBelowOrEqualAvg(double avgEarnings, string names[], double data[]
         i++;
     }
 }
-
-
