@@ -1,4 +1,4 @@
-/* A school has 8 part-time tutors who log their weekly tutoring hours along with their hourly tutoring rate.
+/* Prompt: A school has 8 part-time tutors who log their weekly tutoring hours along with their hourly tutoring rate.
 You are given a data file that contains the tutor's first name, the number of hours tutored in a week, and
 their hourly tutoring rate. The program calculates each tutor's weekly earnings and the average earnings
 among all tutors. It then outputs each tutor's weekly earnings, the average earnings, and the names of all
