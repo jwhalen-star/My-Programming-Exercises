@@ -24,8 +24,10 @@ string accept_user_input() {
    cout << "Please enter a string you would like the program to repeat back to you: ";
    getline(cin, user_input_string);
    cout << endl;
+   
    return user_input_string;
 }
+
 void output_user_input(string userOutput) {
    cout << userOutput << endl;
 }
