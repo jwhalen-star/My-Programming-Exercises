@@ -89,7 +89,7 @@ int calculateMugCharge(string mugType) {
    return mugCharge;
 }
 
-int inputNumWords() {      // Uses input validation module from my github
+int inputNumWords() {      // Uses input validation module I created
    int numWords;
 
    cout << "Please decide how many words you would like on your mug: ";
