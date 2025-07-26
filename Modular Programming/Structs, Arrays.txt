@@ -1,13 +1,13 @@
 // Create a program that simulates an office supplies order system. Display the menu, accept user input, and print a receipt.
 
-// Description: Declares a new array to capture inputs. Switch statement to populate array of structs.
+// Description: Declares a new array to capture inputs. Switch statement to populate an array of structs.
 
 #include <iostream> 
 #include <string>
  
 using namespace std;
 
-const int SIZE = 10;  // Updated to 10 for more items
+const int SIZE = 10; 
 
 struct itemType
 {
