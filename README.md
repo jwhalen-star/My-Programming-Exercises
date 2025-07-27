@@ -1,6 +1,6 @@
-# Programming Practice
+# My Programming Practice
 
-Welcome to my "Programming Practice" repository.
+Welcome to the "My Programming Practice" repository.
 Within this repository you will find structured pseudocode representations, flowcharts, and of course, actual code I have written in various programming languages to address various programming oriented exercises.
 Within these various implementations, I explore fundamental coding and syntax concepts. 
 Furthermore, each implementation is designed to showcase a deep and fulfilled understanding of the strategies being applied, as well as clearly documents the problem solving journey embedded within this repository. 
