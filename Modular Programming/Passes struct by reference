@@ -1,6 +1,6 @@
 // Create a program that runs calculations on numbers and outputs the result.
 
-// Description: Struct passed by reference. Struct object maintaines last values assigned in the loop. 
+// Description: Struct passed by reference. Stores values. 
 
 #include <iostream>
 #include <string>
@@ -11,8 +11,8 @@ struct multiplyNumber {
    string header1;
    string header2;
    string header3;
-   int byFour;
-   int bySix;
+   int byFour[11];
+   int bySix[11];
 };
 
 void multiplyNumberFunction(multiplyNumber& inputStruct);
@@ -33,12 +33,14 @@ void multiplyNumberFunction(multiplyNumber& inputStruct) {
    inputStruct.header1 = "A number multiplied by 4: ";
    inputStruct.header2 = "A number multiplied by 6: ";
 
+   int index = 0;
    int i = 10;
-   while (i <= 20) {
-      inputStruct.byFour = i * 4;
-      inputStruct.bySix = i * 6;
-      cout << inputStruct.header1 << inputStruct.byFour << endl;
-      cout << inputStruct.header2 << inputStruct.bySix << endl;
+   while (index <= 10) {
+      inputStruct.byFour[index] = i * 4;
+      inputStruct.bySix[index] = i * 6;
+      cout << inputStruct.header1 << inputStruct.byFour[index] << endl;
+      cout << inputStruct.header2 << inputStruct.bySix[index] << endl;
       i++;
+      index++;
    }
 }
