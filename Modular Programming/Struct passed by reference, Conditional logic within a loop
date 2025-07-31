@@ -1,0 +1,72 @@
+// Prompt: Create a program that processes daily sales figures for a small kiosk and determines the highest, lowest, and average sales over a fixed 10-day period.
+
+// Description: Struct passed by reference. Global constant for array size. Uses conditional logic inside a loop to evaluate and summarize numeric input.
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+const int SIZE = 10;
+
+struct SalesData {
+   double dailySales[SIZE];
+   double topSale;
+   double lowSale;
+   double totalRevenue;
+   double averageSale;
+};
+
+void getSalesData(SalesData& data);
+void computeSalesStats(SalesData& data);
+void displaySalesSummary(SalesData& data);
+
+int main()
+{
+   SalesData KioskSales;
+
+   getSalesData(KioskSales);
+
+   computeSalesStats(KioskSales);
+
+   displaySalesSummary(KioskSales);
+
+   return 0;
+}
+
+void getSalesData(SalesData& data) {
+   int loopIndex = 0;
+   double dailyAmount;
+   while (loopIndex < SIZE) {
+      cout << "Enter sales for day " << (loopIndex + 1) << ": $";
+      cin >> dailyAmount;
+      data.dailySales[loopIndex] = dailyAmount;
+      loopIndex++;
+   }
+   cout << endl;
+}
+
+void computeSalesStats(SalesData& data) {
+   data.lowSale = data.dailySales[0];
+   data.topSale = data.dailySales[0];
+   data.totalRevenue = 0;
+
+   int loopIndex = 0;
+   while (loopIndex < SIZE) {
+      if (data.dailySales[loopIndex] < data.lowSale) {
+         data.lowSale = data.dailySales[loopIndex];
+      }
+      if (data.dailySales[loopIndex] > data.topSale) {
+         data.topSale = data.dailySales[loopIndex];
+      }
+      data.totalRevenue += data.dailySales[loopIndex];
+      loopIndex++;
+   }
+   data.averageSale = data.totalRevenue / SIZE;
+}
+
+void displaySalesSummary(SalesData& data) {   
+   cout << "Highest Sale: $" << data.topSale << endl;
+   cout << "Lowest Sale : $" << data.lowSale << endl;
+   cout << "Average Sale: $" << data.averageSale << endl;
+}
