@@ -1,0 +1,59 @@
+// Prompt: Create a program that gathers customer feedback scores for a cafe and computes the average satisfaction rating.
+// Description: Struct passed by reference to track cumulative values across modules. Input validation (if input is in bounds) to ensure it falls within an expected range.
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct FeedbackData {
+    double totalPoints;
+    int totalGuests;
+};
+
+int promptInitialScore();
+void gatherFeedback(FeedbackData& dataTracker, int currentScore);
+void reportAverage(FeedbackData dataSnapshot);
+
+int main()
+{
+    FeedbackData cafeFeedback;
+
+    int startingScore = promptInitialScore();
+
+    gatherFeedback(cafeFeedback, startingScore);
+
+    reportAverage(cafeFeedback);
+
+    return 0;
+}
+
+int promptInitialScore() {
+    int entry;
+    cout << "Enter satisfaction score for cafe visit (0-4), or a negative number to exit: ";
+    cin >> entry;
+    return entry;
+}
+
+void gatherFeedback(FeedbackData& dataTracker, int currentScore) {
+    while (currentScore >= 0) {
+        if (currentScore >= 0 && currentScore <= 4) {
+            dataTracker.totalPoints += currentScore;
+            dataTracker.totalGuests++;
+        } else {
+            cout << "Invalid score. Please enter a value between 0 and 4." << endl;
+        }
+
+        cout << "Enter satisfaction score for cafe visit (0-4), or a negative number to exit: ";
+        cin >> currentScore;
+    }
+}
+
+void reportAverage(FeedbackData dataSnapshot) {
+    if (dataSnapshot.totalGuests > 0) {
+        double averageScore = dataSnapshot.totalPoints / dataSnapshot.totalGuests;
+        cout << "Average Satisfaction Score: " << averageScore << endl;
+    } else {
+        cout << "No feedback data available." << endl;
+    }
+}
