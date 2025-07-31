@@ -1,0 +1,52 @@
+// Prompt: Create a program that tallies how many customers prefer hot coffee and how many prefer iced coffee.
+// Description: Uses a struct. Accumulates input values inside a loop. Inputs are collected and counted one at a time.
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct CoffeePreferences {
+    string drinkType;
+    int icedCount;
+    int hotCount;
+};
+
+void collectPreferences(CoffeePreferences& trackerRef);
+void printSummary(CoffeePreferences reportStruct);
+
+int main()
+{
+    CoffeePreferences dailyCoffeeStats;
+
+    collectPreferences(dailyCoffeeStats);
+
+    printSummary(dailyCoffeeStats);
+
+    return 0;
+}
+
+void collectPreferences(CoffeePreferences& trackerRef) {
+    cout << "Enter H if you prefer hot coffee, I if you prefer iced coffee, or X to finish: ";
+    cin >> trackerRef.drinkType;
+    cout << endl;
+
+    while (trackerRef.drinkType != "X" && trackerRef.drinkType != "x") {
+        if (trackerRef.drinkType == "H") {
+            trackerRef.hotCount++;
+        } else if (trackerRef.drinkType == "I") {
+            trackerRef.icedCount++;
+        } else {
+            cout << "Invalid entry." << endl;
+        }
+
+        cout << "Enter the next preference, or X to finish: ";
+        cin >> trackerRef.drinkType;
+        cout << endl;
+    }
+}
+
+void printSummary(CoffeePreferences reportStruct) {
+    cout << "Number of customers who prefer hot coffee: " << reportStruct.hotCount << endl;
+    cout << "Number of customers who prefer iced coffee: " << reportStruct.icedCount << endl;
+}
