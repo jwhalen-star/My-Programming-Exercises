@@ -20,7 +20,7 @@ int main()
    get_item_name();
 
    cout << fixed << setprecision(2);
-   cout << "The item costs: " << calc_price_to_buy(get_retail_price(), calc_sale_to_decimal(get_sale_percent()));
+   cout << "The item costs: " << calc_price_to_buy(get_retail_price(), calc_sale_to_decimal(get_sale_percent()));      // Inline function calls
    
    return 0;
 }
