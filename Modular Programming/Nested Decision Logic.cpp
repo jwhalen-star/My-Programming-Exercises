@@ -1,5 +1,4 @@
 /* Prompt: Create a program that determines if a player qualifies for a tournament based on score and rank.
-   
    Description: Nested decision logic. If-else statements. User input. Relational operators. Prints text to console.
 */
 
