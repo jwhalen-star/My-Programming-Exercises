@@ -1,0 +1,86 @@
+// Prompt: Create a program that prompts a user to order a smoothie and outputs the price.
+
+/* Description:  Added functionality within main. Loops through modules to allow user to add more toppings. 
+   Modules which contains loops, output is controlled by a flag variable. 
+   Uses string array and parallel single dimensional double array. 
+*/
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+const int NUM_TOPPINGS = 5;
+const double BASE_SMOOTHIE_COST = 3.49;
+
+string promptTopping();
+void displayToppingCost(string selectedTopping, string toppingList[], double toppingCosts[]);
+double computeSmoothieTotal(string selectedTopping, string toppingList[], double toppingCosts[]);
+
+int main()
+{
+   double totalPrice = BASE_SMOOTHIE_COST;
+
+   string toppingOptions[] = {"Chia", "Protein", "Honey", "Coconut", "AlmondButter"};
+   double extraCharges[] = {0.75, 1.25, 0.60, 0.90, 1.50};
+
+   while (true) {
+      string userTopping = promptTopping();
+
+      if (userTopping != "XXX") {
+
+         displayToppingCost(userTopping, toppingOptions, extraCharges);
+
+         totalPrice += getToppingPrice(userTopping, toppingOptions, extraCharges);
+
+      } else {
+
+         break;
+      }
+   }  
+   
+   cout << "Total price is " << totalPrice << endl;
+
+   return 0;
+}
+
+string promptTopping() {
+   string toppingInput;
+   cout << "Enter smoothie topping or XXX to quit: ";
+   cin >> toppingInput;
+   return toppingInput;
+}
+
+void displayToppingCost(string selectedTopping, string toppingList[], double toppingCosts[]) {
+   bool toppingFound = false;
+   int index = 0;
+   while (index < NUM_TOPPINGS) {
+      if (toppingList[index] == selectedTopping) {
+         cout << selectedTopping << " costs $" << toppingCosts[index] << endl;
+         toppingFound = true;
+         break;
+      }
+      index++;
+   }
+   if (!toppingFound) {
+      cout << "Sorry, we don't offer that topping." << endl;
+   }
+}
+
+double getToppingPrice(string selectedTopping, string toppingList[], double toppingCosts[]) {
+   double costOfTopping = 0;
+   bool flag = false;
+   int index = 0;
+   while (index < NUM_TOPPINGS) {
+      if (toppingList[index] == selectedTopping) {
+         costOfTopping = toppingCosts[index];
+         flag = true;
+         break;
+      }
+      index++;
+   }
+   if (!flag) {
+      costOfTopping = 0.0;
+   }
+   return costOfTopping;
+}
