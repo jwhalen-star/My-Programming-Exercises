@@ -1,0 +1,71 @@
+// Prompt: Create a program that prompts a user to order a smoothie and outputs the price.
+
+/* Description:  Module which contains a loop, output is controlled by a flag variable. 
+   Uses string array and parallel single dimensional double array. 
+*/
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+const int NUM_TOPPINGS = 5;
+const double BASE_SMOOTHIE_COST = 3.49;
+
+string promptTopping();
+void displayToppingCost(string selectedTopping, string toppingList[], double toppingCosts[]);
+double computeSmoothieTotal(string selectedTopping, string toppingList[], double toppingCosts[]);
+
+int main()
+{
+   string userTopping = promptTopping();
+
+   string toppingOptions[] = {"Chia", "Protein", "Honey", "Coconut", "AlmondButter"};
+   double extraCharges[] = {0.75, 1.25, 0.60, 0.90, 1.50};
+
+   displayToppingCost(userTopping, toppingOptions, extraCharges);
+
+   double finalCost = computeSmoothieTotal(userTopping, toppingOptions, extraCharges);
+
+   return 0;
+}
+
+string promptTopping() {
+   string toppingInput;
+   cout << "Enter smoothie topping or XXX to quit: ";
+   cin >> toppingInput;
+   return toppingInput;
+}
+
+void displayToppingCost(string selectedTopping, string toppingList[], double toppingCosts[]) {
+   if (selectedTopping != "XXX") {
+      bool toppingFound = false;
+      int index = 0;
+      while (index < NUM_TOPPINGS) {
+         if (toppingList[index] == selectedTopping) {
+            cout << selectedTopping << " costs $" << toppingCosts[index] << endl;
+            toppingFound = true;
+            break;
+         }
+         index++;
+      }
+      if (!toppingFound) {
+         cout << "Sorry, we don't offer that topping." << endl;
+      }
+   }
+}
+
+double computeSmoothieTotal(string selectedTopping, string toppingList[], double toppingCosts[]) {
+   double smoothieTotal = 0;
+   if (selectedTopping != "XXX") {
+      int index = 0;
+      while (index < NUM_TOPPINGS) {
+         if (toppingList[index] == selectedTopping) {
+            smoothieTotal = toppingCosts[index] + BASE_SMOOTHIE_COST;
+            break;
+         }
+         index++;
+      }
+   }
+   return smoothieTotal;
+}
